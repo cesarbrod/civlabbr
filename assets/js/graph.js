@@ -422,7 +422,8 @@
         ctx.fillStyle = n.kind === "hub" ? "#111827" : "#334155";
         ctx.font = (n.kind === "hub" ? "bold 12px" : "11px") + " system-ui,sans-serif";
         ctx.textAlign = "center";
-        var lines = splitLabel(n.label);
+        var text = (n.kind === "partido" && n.ref && n.ref.count) ? n.label + " (" + n.ref.count + ")" : n.label;
+        var lines = splitLabel(text);
         lines.forEach(function (ln, k) { ctx.fillText(ln, p[0], p[1] + rad + 13 + k * 13); });
       }
       ctx.globalAlpha = 1;
