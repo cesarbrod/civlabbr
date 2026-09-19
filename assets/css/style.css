@@ -101,6 +101,7 @@ dialog{border:1px solid var(--line);border-radius:16px;max-width:720px;width:cal
 .graph-hint{position:absolute;top:10px;left:14px;pointer-events:none}
 .graph-legend-trigger{position:absolute;left:12px;bottom:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px;cursor:pointer;font-size:14px;box-shadow:var(--shadow)}
 .graph-legend{position:absolute;left:12px;bottom:56px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px;display:flex;flex-direction:column;gap:6px;box-shadow:var(--shadow)}
+.graph-legend[hidden]{display:none}
 .graph-legend .dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px}
 .graph-tabs{position:absolute;right:12px;bottom:12px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;box-shadow:var(--shadow)}
 .graph-tabs button{border:0;background:#fff;padding:9px 16px;cursor:pointer;font-size:14px}
