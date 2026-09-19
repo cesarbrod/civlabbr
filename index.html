@@ -21,6 +21,7 @@
         <a href="#explorar" data-goto-tab="senadores">Senadores</a>
         <a href="#explorar" data-goto-tab="deputados">Deputados</a>
         <a href="#explorar" data-goto-tab="executivo">Executivo</a>
+        <a href="#mapa">Mapa do poder</a>
         <a href="#sobre">Sobre</a>
       </nav>
       <div class="topbar-meta"><span id="updated-badge" class="badge">carregando dados…</span></div>
@@ -122,6 +123,45 @@
       <div id="grid" class="grid" aria-live="polite"></div>
     </section>
 
+    <section class="wrap" id="mapa">
+      <div class="explorer-head">
+        <div>
+          <h2>Mapa do poder</h2>
+          <p class="small muted" style="margin:0">Relações entre Poderes, partidos, UFs e pessoas — arraste os nós, use o scroll para zoom, clique para expandir.</p>
+        </div>
+      </div>
+      <div class="graph-shell">
+        <div class="graph-toolbar">
+          <label class="grow">Buscar pessoa no grafo
+            <input id="g-q" type="search" placeholder="Ex.: Lula, Marina, Padilha…" autocomplete="off" list="g-names" />
+            <datalist id="g-names"></datalist>
+          </label>
+          <label class="check"><input type="checkbox" id="g-sen" checked /> Senado</label>
+          <label class="check"><input type="checkbox" id="g-dep" checked /> Câmara</label>
+          <label class="check"><input type="checkbox" id="g-exe" checked /> Executivo</label>
+          <button id="g-reset" class="btn small" type="button">Recentralizar</button>
+        </div>
+        <div class="graph-stage">
+          <canvas id="g-canvas" aria-label="Grafo das relações do Governo Federal"></canvas>
+          <div class="graph-hint small muted" id="g-hint">carregando dados…</div>
+          <button class="graph-legend-trigger" id="g-legend-btn" aria-expanded="false" type="button">Legenda ▾</button>
+          <div class="graph-legend" id="g-legend" hidden>
+            <div><span class="dot" style="background:#1e3a8a"></span> Senado Federal</div>
+            <div><span class="dot" style="background:#166534"></span> Câmara dos Deputados</div>
+            <div><span class="dot" style="background:#b45309"></span> Executivo federal</div>
+            <div><span class="dot" style="background:#7c3aed"></span> Partido (tamanho = nº de membros)</div>
+            <div><span class="dot" style="background:#64748b"></span> UF</div>
+            <div><span class="dot" style="background:#0f766e"></span> Pessoa</div>
+          </div>
+          <div class="graph-tabs" role="tablist" aria-label="Tipo de visualização">
+            <button role="tab" aria-selected="true" data-gtab="graph" type="button">Graph</button>
+            <button role="tab" aria-selected="false" data-gtab="power" type="button">Power map</button>
+          </div>
+          <aside class="graph-panel" id="g-panel" hidden></aside>
+        </div>
+      </div>
+    </section>
+
     <section class="wrap two-col" id="sobre">
       <div>
         <h2>Sobre</h2>
@@ -176,5 +216,6 @@
   </dialog>
 
   <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/graph.js" defer></script>
 </body>
 </html>

@@ -296,6 +296,10 @@
   $("#modal-close").addEventListener("click", function () { modal.close(); });
   modal.addEventListener("click", function (e) { if (e.target === modal) modal.close(); });
 
+  // Bridge for graph.js (Mapa do poder): reuse the profile modal.
+  window.CivLab = window.CivLab || {};
+  window.CivLab.openPerson = openModal;
+
   function setTab(t) {
     state.tab = t;
     state.filters.uf = ""; state.filters.party = ""; state.filters.q = ""; fQ.value = "";

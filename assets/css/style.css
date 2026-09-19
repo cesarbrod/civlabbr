@@ -89,4 +89,26 @@ dialog{border:1px solid var(--line);border-radius:16px;max-width:720px;width:cal
 .kv dd{margin:0}
 .modal-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .modal-links a{border:1px solid var(--line);border-radius:999px;padding:8px 12px;text-decoration:none;font-size:13px}
+.graph-shell{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:24px}
+.graph-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:end;padding:14px;border-bottom:1px solid var(--line)}
+.graph-toolbar label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted)}
+.graph-toolbar .grow{flex:1;min-width:220px}
+.graph-toolbar input[type=search]{padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px;min-width:200px}
+.graph-toolbar .check{flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-size:14px}
+.graph-stage{position:relative;height:560px;background:radial-gradient(circle at 50% 40%,#f8fafc,#eef2f7)}
+#g-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#g-canvas:active{cursor:grabbing}
+.graph-hint{position:absolute;top:10px;left:14px;pointer-events:none}
+.graph-legend-trigger{position:absolute;left:12px;bottom:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 12px;cursor:pointer;font-size:14px;box-shadow:var(--shadow)}
+.graph-legend{position:absolute;left:12px;bottom:56px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px;display:flex;flex-direction:column;gap:6px;box-shadow:var(--shadow)}
+.graph-legend .dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px}
+.graph-tabs{position:absolute;right:12px;bottom:12px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;box-shadow:var(--shadow)}
+.graph-tabs button{border:0;background:#fff;padding:9px 16px;cursor:pointer;font-size:14px}
+.graph-tabs button[aria-selected=true]{background:#111827;color:#fff}
+.graph-panel{position:absolute;top:12px;right:12px;width:min(300px,80%);max-height:calc(100% - 80px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:var(--shadow);font-size:13px}
+.graph-panel h3{margin:0 0 4px;font-size:16px}
+.graph-panel .pill{margin:4px 0}
+.graph-panel ul{margin:8px 0;padding-left:18px}
+.graph-panel button{margin-top:8px}
+@media(max-width:640px){.graph-stage{height:440px}}
 @media(max-width:860px){.hero,.two-col,.modal-body{grid-template-columns:1fr}.focus-grid{grid-template-columns:1fr}.topbar-inner{flex-wrap:wrap}}
