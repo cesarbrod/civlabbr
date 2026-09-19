@@ -1,0 +1,42 @@
+APACHE — COMO PUBLICAR (só HTML/CSS/JS, sem PHP, sem banco)
+============================================================
+
+1. Suba TUDO via FTP/cPanel File Manager para public_html/ (ou subpasta),
+   preservando a estrutura:
+
+   index.html
+   .htaccess
+   assets/css/style.css
+   assets/js/app.js
+   assets/img/ (634 fotos locais, ~41 MB: senadores/ deputados/ executivo/)
+   data/senadores.json
+   data/deputados.json
+   data/executivo.json
+   data/meta.json
+
+2. Teste no navegador:
+   https://seudominio.com/
+   https://seudominio.com/data/senadores.json  (deve mostrar JSON)
+
+3. Fotos: 100% locais em assets/img/ (fotos oficiais do Senado e da
+   Câmara; retratos do Executivo via Wikimedia Commons e gov.br —
+   fontes em data/executivo.json → foto_source). Ordem de fallback no
+   site: foto local → URL oficial remota → avatar com iniciais.
+   Como são ~41 MB em 634 arquivos, prefira subir via ZIP + extrair no
+   cPanel (ou rsync) em vez de FTP arquivo a arquivo.
+
+4. Problemas comuns no Apache:
+   - Página abre mas lista fica vazia: a pasta data/ não foi enviada
+     ou o caminho quebrou (ex.: jogou os arquivos soltos sem as pastas).
+     Abra o DevTools (F12) > Console para ver o erro de fetch.
+   - Foto quebrada: confira se assets/img/ foi enviada por completo.
+   - JSON baixa em vez de exibir / erro 403: o .htaccess incluído já
+     define AddType application/json. Se o host ignorar .htaccess,
+     ative "JSON" nos MIME types do cPanel.
+
+5. Atualizar dados e fotos (no seu PC, não no servidor):
+   python3 scripts/fetch_data.py          # dados Senado/Câmara/Executivo (preserva fotos e emails curados)
+   python3 scripts/download_photos.py     # fotos oficiais p/ assets/img/
+   python3 scripts/fetch_executivo_photos.py  # retratos do Executivo
+   python3 scripts/fetch_executivo_emails.py  # emails de gabinete do Executivo
+   suba de novo data/ + assets/img/ (só os arquivos novos).

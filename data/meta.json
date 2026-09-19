@@ -1,0 +1,13 @@
+{
+  "atualizado_em": "2026-09-19T14:28:31.069287+00:00",
+  "fontes": {
+    "senado": "https://legis.senado.leg.br/dadosabertos/senador/lista/atual.json",
+    "camara": "https://dadosabertos.camara.leg.br/api/v2/deputados",
+    "executivo": "Curadoria a partir de gov.br, Diário Oficial da União e Wikipédia (Lista de membros do gabinete de Lula 2023–presente), atualizada em set/2026 pós-desincompatibilização de abril/2026"
+  },
+  "totais": {
+    "senadores": 81,
+    "deputados": 513,
+    "executivo": 40
+  }
+}

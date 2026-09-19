@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CivLab · Grafo do Governo Federal — Brasil</title>
+  <meta name="description" content="Quem ocupa o Senado, a Câmara dos Deputados e o Poder Executivo federal do Brasil. Dados abertos, busca, filtros por UF e partido." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇧🇷</text></svg>" />
+</head>
+<body>
+  <a class="skip" href="#explorar">Pular para o conteúdo</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◉</span>
+        <span><strong>CivLab</strong> <span class="muted">/ BR Gov</span></span>
+      </div>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#explorar" data-goto-tab="senadores">Senadores</a>
+        <a href="#explorar" data-goto-tab="deputados">Deputados</a>
+        <a href="#explorar" data-goto-tab="executivo">Executivo</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <div class="topbar-meta"><span id="updated-badge" class="badge">carregando dados…</span></div>
+    </div>
+    <div class="wrap searchbar">
+      <label class="sr" for="global-search">Buscar por nome, partido, UF ou cargo</label>
+      <input id="global-search" type="search" placeholder="Buscar: nome, partido (ex. PT), UF (ex. SP) ou cargo (ex. Ministro da Fazenda)…" autocomplete="off" />
+      <div class="search-hint">81 senadores · 513 deputados federais · Poder Executivo federal · Legislatura 57ª (2023–2027)</div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">Grafo do Governo Federal · Brasil</p>
+        <h1>Quem governa o Brasil, em um só lugar.</h1>
+        <p class="lede">Senado Federal, Câmara dos Deputados e Poder Executivo federal — com fotos, partido, UF, contatos e links oficiais. Dados das APIs de Dados Abertos do Senado e da Câmara, mais curadoria do Executivo a partir do gov.br e do Diário Oficial.</p>
+        <div class="hero-actions">
+          <button class="btn primary" data-goto-tab="senadores">Ver senadores</button>
+          <button class="btn" data-goto-tab="deputados">Ver deputados</button>
+          <button class="btn" data-goto-tab="executivo">Ver Executivo</button>
+        </div>
+        <p class="small muted">Inspirado inicialmente em <a href="https://graph.civlab.org/" target="_blank" rel="noopener">graph.civlab.org</a>. Projeto independente da <a href="https://brodtec.com" target="_blank" rel="noopener">BrodTec</a>, sem afiliação com órgãos de governo.</p>
+      </div>
+      <aside class="overview" aria-label="Visão geral">
+        <h2>Visão geral</h2>
+        <dl class="stats">
+          <div><dt>População (IBGE 2024)</dt><dd>~213 mi</dd></div>
+          <div><dt>Senadores</dt><dd id="stat-sen">81</dd></div>
+          <div><dt>Deputados federais</dt><dd id="stat-dep">513</dd></div>
+          <div><dt>Executivo federal mapeado</dt><dd id="stat-exe">—</dd></div>
+          <div><dt>Orçamento federal 2026 (LOA)</dt><dd>~R$ 5,9 tri*</dd></div>
+          <div><dt>Legislatura</dt><dd>57ª · 2023–2027</dd></div>
+        </dl>
+        <p class="small muted">*Inclui refinanciamento da dívida. Veja <a href="https://www.gov.br/planejamento/pt-br/assuntos/orcamento" target="_blank" rel="noopener">SOF/MPO</a>.</p>
+      </aside>
+    </section>
+
+    <section class="wrap">
+      <h2>Pessoas e órgãos em foco</h2>
+      <div class="focus-grid">
+        <button class="focus-card" data-goto-tab="senadores">
+          <span class="focus-banner senado" aria-hidden="true">SF · 81</span>
+          <span class="focus-kicker">Poder Legislativo · Câmara Alta</span>
+          <strong>Senado Federal</strong>
+          <span class="muted">81 senadores · 3 por UF + DF · mandato de 8 anos. Presidência, lideranças, comissões e votações.</span>
+          <span class="link">Ver perfil →</span>
+        </button>
+        <button class="focus-card" data-goto-tab="deputados">
+          <span class="focus-banner camara" aria-hidden="true">CD · 513</span>
+          <span class="focus-kicker">Poder Legislativo · Câmara Baixa</span>
+          <strong>Câmara dos Deputados</strong>
+          <span class="muted">513 deputados federais · representação proporcional por UF · mandato de 4 anos.</span>
+          <span class="link">Ver perfil →</span>
+        </button>
+        <button class="focus-card" data-goto-tab="executivo">
+          <span class="focus-banner planalto" aria-hidden="true">Planalto</span>
+          <span class="focus-kicker">Poder Executivo Federal</span>
+          <strong>Presidência + Ministérios</strong>
+          <span class="muted">Presidente, vice, Casa Civil, 30+ ministérios e órgãos com status de ministério (AGU, CGU, GSI, SECOM…).</span>
+          <span class="link">Ver perfil →</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="wrap" id="explorar">
+      <div class="explorer-head">
+        <h2>Explorar</h2>
+        <div class="tabs" role="tablist" aria-label="Escolher poder">
+          <button role="tab" aria-selected="true" data-tab="senadores" id="tab-senadores">Senadores <span class="count" id="count-sen"></span></button>
+          <button role="tab" aria-selected="false" data-tab="deputados" id="tab-deputados">Deputados federais <span class="count" id="count-dep"></span></button>
+          <button role="tab" aria-selected="false" data-tab="executivo" id="tab-executivo">Executivo federal <span class="count" id="count-exe"></span></button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="filter-row">
+          <label>UF
+            <select id="f-uf"><option value="">Todas</option></select>
+          </label>
+          <label>Partido
+            <select id="f-party"><option value="">Todos</option></select>
+          </label>
+          <label class="grow">Buscar nesta lista
+            <input id="f-q" type="search" placeholder="Filtrar pelo nome…" autocomplete="off" />
+          </label>
+          <label>Ordenar
+            <select id="f-sort">
+              <option value="nome">Nome A–Z</option>
+              <option value="partido">Partido</option>
+              <option value="uf">UF</option>
+            </select>
+          </label>
+          <button id="f-clear" class="btn small" type="button">Limpar</button>
+        </div>
+        <p class="small muted" id="result-info" aria-live="polite"></p>
+      </div>
+
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section class="wrap two-col" id="sobre">
+      <div>
+        <h2>Sobre</h2>
+        <p>Não dá para governar sistemas que não entendemos. Este site monta um modelo simples e navegável do Governo Federal do Brasil: quem são, de onde vêm e como contatar senadores, deputados federais e membros do Executivo.</p>
+        <ul>
+          <li><strong>Senado:</strong> <code>legis.senado.leg.br/dadosabertos/senador/lista/atual.json</code> — 81 em exercício.</li>
+          <li><strong>Câmara:</strong> <code>dadosabertos.camara.leg.br/api/v2/deputados</code> — 513 em exercício (legislatura 57).</li>
+          <li><strong>Executivo:</strong> curadoria manual a partir de <a href="https://www.gov.br/planalto" target="_blank" rel="noopener">gov.br/Planalto</a>, DOU e Wikipédia, atualizada em set/2026 (pós-desincompatibilização de abril/2026 para as eleições). E-mails do Executivo são os institucionais do gabinete de cada pasta (ver <code>data/executivo.json → email_source</code>). Confira sempre no DOU.</li>
+        </ul>
+        <p class="small muted">CivLab não é afiliado ao Governo Federal. Fotos de senadores/deputados: cópias locais das fotos oficiais do Senado e da Câmara. Fotos do Executivo: Wikimedia Commons e gov.br (ver <code>data/executivo.json → foto_source</code>). Site 100% estático — suba tudo via FTP no Apache, não há a necessidade de backend, banco de dados, ou build.</p>
+      </div>
+      <div>
+        <h3>Como publicar em um servidor web</h3>
+        <pre><code># suba a pasta inteira preservando a estrutura:
+# index.html
+# assets/css/style.css
+# assets/js/app.js
+# data/*.json
+# .htaccess
+# Teste: https://seudominio.com/ + /data/senadores.json</code></pre>
+        <p class="small">Informações completas no repositório do projeto em <a href="https://github.com/cesarbrod/civlabbr" target="_blank" rel="noopener">github.com/cesarbrod/civlabbr</a></p>
+        <h3>Fontes oficiais</h3>
+        <ul class="small">
+          <li><a href="https://legis.senado.leg.br/dadosabertos/" target="_blank" rel="noopener">Dados Abertos do Senado</a></li>
+          <li><a href="https://dadosabertos.camara.leg.br/" target="_blank" rel="noopener">Dados Abertos da Câmara</a></li>
+          <li><a href="https://www.gov.br/planalto/pt-br/conheca-a-presidencia" target="_blank" rel="noopener">Planalto — ministérios</a></li>
+          <li><a href="https://www.in.gov.br/" target="_blank" rel="noopener">Diário Oficial da União</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Feito para <strong>você</strong> · Dados públicos · <span id="foot-date"></span></span>
+      <span class="muted">Inspirado em graph.civlab.org</span>
+    </div>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="m-title">
+    <button class="modal-x" id="modal-close" aria-label="Fechar">✕</button>
+    <div class="modal-body">
+      <div class="modal-media" id="m-photo-wrap"></div>
+      <div>
+        <p class="kicker" id="m-kicker"></p>
+        <h3 id="m-title"></h3>
+        <p class="muted" id="m-sub"></p>
+        <dl class="kv" id="m-kv"></dl>
+        <div class="modal-links" id="m-links"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

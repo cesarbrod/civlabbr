@@ -1,0 +1,608 @@
+[
+  {
+    "cargo": "Presidente da República",
+    "nome": "Luiz Inácio Lula da Silva",
+    "partido": "PT",
+    "desde": "2023-01-01",
+    "orgao": "Presidência da República",
+    "foto": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/presidencia/fotos-presidente/presidente-lula.jpg",
+    "foto_local": "assets/img/executivo/luiz-inacio-lula-da-silva.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva"
+  },
+  {
+    "cargo": "Vice-Presidente da República",
+    "nome": "Geraldo Alckmin",
+    "partido": "PSB",
+    "desde": "2023-01-01",
+    "orgao": "Vice-Presidência",
+    "foto": "",
+    "foto_local": "assets/img/executivo/geraldo-alckmin.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Geraldo_Alckmin"
+  },
+  {
+    "cargo": "Ministro da Casa Civil",
+    "nome": "Miriam Belchior",
+    "partido": "PT",
+    "desde": "2026-04-03",
+    "orgao": "Casa Civil",
+    "foto": "",
+    "foto_local": "assets/img/executivo/miriam-belchior.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Miriam_Belchior",
+    "email": "agendacasacivil@presidencia.gov.br",
+    "email_source": "https://www.gov.br/casacivil/pt-br/composicao/gabinete-do-ministro/quem-e-quem-1",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Fazenda",
+    "nome": "Dario Durigan",
+    "partido": "Sem partido",
+    "desde": "2026-03-19",
+    "orgao": "Ministério da Fazenda",
+    "foto": "",
+    "foto_local": "assets/img/executivo/dario-durigan.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Dario_Durigan",
+    "email": "gabinete.ministro@fazenda.gov.br",
+    "email_source": "https://www.gov.br/fazenda/pt-br/composicao/quem-e-quem",
+    "email_alt": [
+      "fabio.terra@fazenda.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Planejamento e Orçamento",
+    "nome": "Bruno Moretti",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "Ministério do Planejamento e Orçamento",
+    "foto": "",
+    "foto_local": "assets/img/executivo/bruno-moretti.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3AMichele_Moretti_Pietro_Gatti.jpg",
+    "email": "agenda.gabinete@planejamento.gov.br",
+    "email_alt": [],
+    "email_source": "https://www.gov.br/planejamento/pt-br/composicao/quem-e-quem",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra da Gestão e da Inovação em Serviços Públicos",
+    "nome": "Esther Dweck",
+    "partido": "Sem partido",
+    "desde": "2023-01-01",
+    "orgao": "Ministério da Gestão e da Inovação",
+    "foto": "",
+    "foto_local": "assets/img/executivo/esther-dweck.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Esther_Dweck",
+    "email": "agenda.mgi@gestao.gov.br",
+    "email_source": "https://www.gov.br/gestao/pt-br/composicao/quem-e-quem/ministra-e-orgaos-de-assistencia-direta",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Desenvolvimento, Indústria, Comércio e Serviços",
+    "nome": "Márcio Fernando Elias Rosa",
+    "partido": "Sem partido",
+    "desde": "2026-04-03",
+    "orgao": "MDIC",
+    "foto": "",
+    "foto_local": "assets/img/executivo/marcio-fernando-elias-rosa.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3AM%C3%A1rcio_Fernando_Elias_Rosa.jpg",
+    "email": "mdic.gab@mdic.gov.br",
+    "email_source": "https://www.gov.br/mdic/pt-br/composicao/quem-e-quem",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Agricultura e Pecuária",
+    "nome": "André de Paula",
+    "partido": "PSD",
+    "desde": "2026-04-01",
+    "orgao": "Ministério da Agricultura e Pecuária",
+    "foto": "",
+    "foto_local": "assets/img/executivo/andre-de-paula.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Andr%C3%A9_de_Paula",
+    "email": "agenda.gm@agro.gov.br",
+    "email_alt": [
+      "gm@agro.gov.br"
+    ],
+    "email_source": "https://www.gov.br/agricultura/pt-br/composicao/ministro-e-staff/andre-carlos-alves-de-paula-filho",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra do Desenvolvimento Agrário e Agricultura Familiar",
+    "nome": "Fernanda Machiaveli",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MDA",
+    "foto": "",
+    "foto_local": "assets/img/executivo/fernanda-machiaveli.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Fernanda_Machiaveli",
+    "email": "gab.mda@mda.gov.br",
+    "email_source": "arquivo oficial MDA (gabinete do ministro)",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Educação",
+    "nome": "Leonardo Barchini",
+    "partido": "Sem partido",
+    "desde": "2026-04-02",
+    "orgao": "Ministério da Educação",
+    "foto": "",
+    "foto_local": "assets/img/executivo/leonardo-barchini.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Leonardo_Barchini",
+    "email": "chefiagm@mec.gov.br",
+    "email_source": "https://www.gov.br/mec/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "gabinetedoministro@mec.gov.br",
+      "gm.assessoria@mec.gov.br",
+      "viniciusroda@mec.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra da Ciência, Tecnologia e Inovação",
+    "nome": "Luciana Santos",
+    "partido": "PCdoB",
+    "desde": "2023-01-01",
+    "orgao": "MCTI",
+    "foto": "",
+    "foto_local": "assets/img/executivo/luciana-santos.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Luciana_Santos",
+    "email": "agendaministra@mcti.gov.br",
+    "email_source": "https://www.gov.br/mcti/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "convite.ministra@mcti.gov.br",
+      "ministra@mcti.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro das Comunicações",
+    "nome": "Frederico Siqueira",
+    "partido": "Sem partido",
+    "desde": "2025-04-24",
+    "orgao": "Ministério das Comunicações",
+    "foto": "",
+    "foto_local": "assets/img/executivo/frederico-siqueira.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Frederico_Siqueira",
+    "email": "agenda@mcom.gov.br",
+    "email_source": "https://www.gov.br/mcom/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "daniela.garcia@mcom.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra da Cultura",
+    "nome": "Margareth Menezes",
+    "partido": "Sem partido",
+    "desde": "2023-01-01",
+    "orgao": "Ministério da Cultura",
+    "foto": "",
+    "foto_local": "assets/img/executivo/margareth-menezes.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Margareth_Menezes",
+    "email": "agendaministra@cultura.gov.br",
+    "email_source": "https://www.gov.br/cultura/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "chefiagabinete@cultura.gov.br",
+      "marco.borges@cultura.gov.br",
+      "rafael.fontes@cultura.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Defesa",
+    "nome": "José Múcio",
+    "partido": "Sem partido",
+    "desde": "2023-01-01",
+    "orgao": "Ministério da Defesa",
+    "foto": "",
+    "foto_local": "assets/img/executivo/jose-mucio.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Jos%C3%A9_M%C3%BAcio",
+    "email": "ministro@defesa.gov.br",
+    "email_source": "https://www.gov.br/defesa/pt-br/composicao/quem-e-quem",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+    "nome": "Wellington Dias",
+    "partido": "PT",
+    "desde": "2023-01-01",
+    "orgao": "MDS",
+    "foto": "",
+    "foto_local": "assets/img/executivo/wellington-dias.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Wellington_Dias",
+    "email": "agenda@mds.gov.br",
+    "email_source": "https://www.gov.br/mds/pt-br/composicao/estrutura",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra dos Direitos Humanos e da Cidadania",
+    "nome": "Janine Mello dos Santos",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MDHC",
+    "foto": "",
+    "foto_local": "assets/img/executivo/janine-mello-dos-santos.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3ACDH_-_Comiss%C3%A3o_de_Direitos_Humanos_e_Legisla%C3%A7%C3%A3o_Participativa_%2854623178487%29.jpg",
+    "email": "agenda.gab@mdh.gov.br",
+    "email_source": "https://www.gov.br/mdh/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "coordenacao.gab@mdh.gov.br",
+      "gab.mdh@mdh.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Empreendedorismo, da Microempresa e da Empresa de Pequeno Porte",
+    "nome": "Tadeu Alencar",
+    "partido": "PSB",
+    "desde": "2026-04-03",
+    "orgao": "Ministério do Empreendedorismo",
+    "foto": "",
+    "foto_local": "assets/img/executivo/tadeu-alencar.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Tadeu_Alencar",
+    "email": "gabineteministro@memp.gov.br",
+    "email_alt": [
+      "agenda.memp@memp.gov.br"
+    ],
+    "email_source": "https://www.gov.br/memp/pt-br/canais_atendimento/gabinete-do-ministro",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Esporte",
+    "nome": "Paulo Henrique Perna Cordeiro",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "Ministério do Esporte",
+    "foto": "",
+    "foto_local": "assets/img/executivo/paulo-henrique-perna-cordeiro.png",
+    "foto_source": "https://www.gov.br/esporte/pt-br/composicao/Gabinete-do-Ministro/paulo-henrique-perna-cordeiro",
+    "email": "agenda.esporte@esporte.gov.br",
+    "email_source": "https://www.gov.br/esporte/pt-br/composicao/Gabinete-do-Ministro/paulo-henrique-perna-cordeiro",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra da Igualdade Racial",
+    "nome": "Rachel Barros de Oliveira",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MIR",
+    "foto": "",
+    "foto_local": "assets/img/executivo/rachel-barros-de-oliveira.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Rachel_Barros",
+    "email": "agenda.gab@igualdaderacial.gov.br",
+    "email_source": "https://www.gov.br/igualdaderacial/pt-br/composicao/gabinete-da-ministra/rachel-barros-de-oliveira",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Integração e do Desenvolvimento Regional",
+    "nome": "Waldez Góes",
+    "partido": "PDT",
+    "desde": "2023-01-01",
+    "orgao": "MIDR",
+    "foto": "",
+    "foto_local": "assets/img/executivo/waldez-goes.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Waldez_G%C3%B3es",
+    "email": "agenda@mdr.gov.br",
+    "email_source": "https://www.gov.br/mdr/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "karla.lima@mdr.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Justiça e Segurança Pública",
+    "nome": "Wellington César Lima e Silva",
+    "partido": "Sem partido",
+    "desde": "2026-01-13",
+    "orgao": "MJSP",
+    "foto": "",
+    "foto_local": "assets/img/executivo/wellington-cesar-lima-e-silva.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Wellington_C%C3%A9sar_Lima_e_Silva",
+    "email": "agenda.ministro@mj.gov.br",
+    "email_alt": [],
+    "email_source": "https://www.gov.br/mj/pt-br/acesso-a-informacao/institucional/sumario/quemequem/gabinete-do-ministro-1",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Meio Ambiente e Mudança do Clima",
+    "nome": "João Paulo Capobianco",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MMA",
+    "foto": "",
+    "foto_local": "assets/img/executivo/joao-paulo-capobianco.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Paulo_Capobianco",
+    "email": "agendagm@mma.gov.br",
+    "email_alt": [
+      "assessoriagm@mma.gov.br"
+    ],
+    "email_source": "https://www.gov.br/mma/pt-br/composicao/gm/quem-e-quem",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro de Minas e Energia",
+    "nome": "Alexandre Silveira",
+    "partido": "PSD",
+    "desde": "2023-01-01",
+    "orgao": "MME",
+    "foto": "",
+    "foto_local": "assets/img/executivo/alexandre-silveira.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Alexandre_Silveira",
+    "email": "gabinete@mme.gov.br",
+    "email_source": "https://www.gov.br/mme/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra das Mulheres",
+    "nome": "Márcia Lopes",
+    "partido": "PT",
+    "desde": "2025-05-05",
+    "orgao": "Ministério das Mulheres",
+    "foto": "",
+    "foto_local": "assets/img/executivo/marcia-lopes.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/M%C3%A1rcia_Lopes",
+    "email": "gabinete@mulheres.gov.br",
+    "email_alt": [
+      "agenda@mulheres.gov.br"
+    ],
+    "email_source": "https://www.gov.br/mulheres/pt-br/canais_atendimento/contato",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministra da Pesca e Aquicultura",
+    "nome": "Rivetla Edipo Araujo Cruz",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MPA",
+    "foto": "",
+    "foto_local": "assets/img/executivo/rivetla-edipo-araujo-cruz.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File:Edipo_Araujo.jpg",
+    "email": "agenda.gm@mpa.gov.br",
+    "email_source": "https://www.gov.br/mpa/pt-br/acesso-a-informacao/institucional/quem-e-quem-3/gabinete-do-ministro/ministro",
+    "email_alt": [
+      "gab.gm@mpa.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro de Portos e Aeroportos",
+    "nome": "Tomé Barros Monteiro da Franca",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MPor",
+    "foto": "",
+    "foto_local": "assets/img/executivo/tome-barros-monteiro-da-franca.jpg",
+    "foto_source": "https://www.gov.br/portos-e-aeroportos/pt-br/composicao/autoridades-1/tome-monteiro-da-franca",
+    "email": "gabinete.gm@mpor.gov.br",
+    "email_source": "https://www.gov.br/portos-e-aeroportos/pt-br/composicao/autoridades-1/tome-monteiro-da-franca",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro dos Povos Indígenas",
+    "nome": "Eloy Terena",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "MPI",
+    "foto": "",
+    "foto_local": "assets/img/executivo/eloy-terena.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Eloy_Terena",
+    "email": "agenda.mpi@povosindigenas.gov.br",
+    "email_alt": [],
+    "email_source": "cartilha oficial de emendas MPI (congressonacional.leg.br)",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Previdência Social",
+    "nome": "Wolney Queiroz",
+    "partido": "PDT",
+    "desde": "2025-05-02",
+    "orgao": "Ministério da Previdência Social",
+    "foto": "",
+    "foto_local": "assets/img/executivo/wolney-queiroz.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Wolney_Queiroz",
+    "email": "chefia.gab@previdencia.gov.br",
+    "email_source": "https://www.gov.br/previdencia/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "gabinete.previdencia@previdencia.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro das Relações Exteriores",
+    "nome": "Mauro Vieira",
+    "partido": "Sem partido",
+    "desde": "2023-01-01",
+    "orgao": "MRE",
+    "foto": "",
+    "foto_local": "assets/img/executivo/mauro-vieira.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Mauro_Vieira",
+    "email": "ministro.estado@itamaraty.gov.br",
+    "email_source": "https://www.gov.br/mre/pt-br/composicao/quem-e-quem",
+    "email_alt": [],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Saúde",
+    "nome": "Alexandre Padilha",
+    "partido": "PT",
+    "desde": "2025-03-10",
+    "orgao": "Ministério da Saúde",
+    "foto": "",
+    "foto_local": "assets/img/executivo/alexandre-padilha.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Alexandre_Padilha",
+    "email": "gabinetedoministro@saude.gov.br",
+    "email_source": "https://www.gov.br/saude/pt-br/composicao/quem-e-quem",
+    "email_alt": [
+      "fabio.manzini@saude.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Trabalho e Emprego",
+    "nome": "Luiz Marinho",
+    "partido": "PT",
+    "desde": "2023-01-01",
+    "orgao": "MTE",
+    "foto": "",
+    "foto_local": "assets/img/executivo/luiz-marinho.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Luiz_Marinho",
+    "email": "agendaministro@trabalho.gov.br",
+    "email_source": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "andre.segantin@trabalho.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro dos Transportes",
+    "nome": "George Santoro",
+    "partido": "Sem partido",
+    "desde": "2026-04-01",
+    "orgao": "Ministério dos Transportes",
+    "foto": "",
+    "foto_local": "assets/img/executivo/george-santoro.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3AGeorge_Andr%C3%A9_Palermo_Santoro.jpg",
+    "email": "ministro@transportes.gov.br",
+    "email_source": "https://www.gov.br/transportes/pt-br/composicao/quem-e-quem",
+    "email_alt": [
+      "eduardo.praca@transportes.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Turismo",
+    "nome": "Gustavo Feliciano",
+    "partido": "Sem partido",
+    "desde": "2025-12-23",
+    "orgao": "Ministério do Turismo",
+    "foto": "",
+    "foto_local": "assets/img/executivo/gustavo-feliciano.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Gustavo_Feliciano",
+    "email": "gm@turismo.gov.br",
+    "email_source": "https://www.gov.br/turismo/pt-br/acesso-a-informacao/institucional/quem-e-quem-1",
+    "email_alt": [
+      "aldo.valentim@turismo.gov.br",
+      "alessandra.sales@turismo.gov.br",
+      "alexandre.mangini@turismo.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro das Cidades",
+    "nome": "Antônio Vladimir Lima",
+    "partido": "Sem partido",
+    "desde": "2026-04-02",
+    "orgao": "Ministério das Cidades",
+    "foto": "",
+    "foto_local": "assets/img/executivo/antonio-vladimir-lima.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3A35%C2%BA_Pr%C3%AAmio_Vladimir_Herzog-_men%C3%A7%C3%B5es_honrosas_%2810448848064%29.jpg",
+    "email": "agenda@cidades.gov.br",
+    "email_source": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "angela.lima@cidades.gov.br",
+      "apsd.mcid@cidades.gov.br",
+      "bruno.maffia@cidades.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Secretaria-Geral da Presidência",
+    "nome": "Guilherme Boulos",
+    "partido": "PSOL",
+    "desde": "2025-10-29",
+    "orgao": "Secretaria-Geral",
+    "foto": "",
+    "foto_local": "assets/img/executivo/guilherme-boulos.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Guilherme_Boulos",
+    "email": "sgpr.agenda@presidencia.gov.br",
+    "email_alt": [],
+    "email_source": "https://www.gov.br/secretariageral/pt-br/acesso-a-informacao/institucional/principais-cargos-e-respectivos-ocupantes",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Secretaria de Relações Institucionais",
+    "nome": "José Nobre Guimarães",
+    "partido": "PT",
+    "desde": "2026-04-14",
+    "orgao": "SRI",
+    "foto": "",
+    "foto_local": "assets/img/executivo/jose-nobre-guimaraes.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3A12.07.2023_-_Cerim%C3%B4nia_de_imposi%C3%A7%C3%A3o_de_comendas_da_Ordem_do_M%C3%A9rito_Naval%2C_seguida_de_jantar_oferecido_pelo_Comando_da_Marinha_%2853042609598%29.jpg",
+    "email": "agenda.srigabinete@presidencia.gov.br",
+    "email_alt": [
+      "sri.gabinete@presidencia.gov.br"
+    ],
+    "email_source": "https://www.gov.br/sri/pt-br/composicao/ministra-1",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Secretaria de Comunicação Social",
+    "nome": "Sidônio Palmeira",
+    "partido": "PT",
+    "desde": "2025-01-08",
+    "orgao": "SECOM",
+    "foto": "",
+    "foto_local": "assets/img/executivo/sidonio-palmeira.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Sid%C3%B4nio_Palmeira",
+    "email": "secom.gabinete@presidencia.gov.br",
+    "email_source": "https://www.gov.br/secom/pt-br/acesso-a-informacao/institucional/quem-e-quem",
+    "email_alt": [
+      "luiza.correa@presidencia.gov.br"
+    ],
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Advogado-Geral da União",
+    "nome": "Jorge Messias",
+    "partido": "Sem partido",
+    "desde": "2023-01-01",
+    "orgao": "AGU",
+    "foto": "",
+    "foto_local": "assets/img/executivo/jorge-messias.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Jorge_Messias",
+    "email": "agenda.ministro@agu.gov.br",
+    "email_alt": [
+      "chefe.gabinete.agu@agu.gov.br"
+    ],
+    "email_source": "https://www.gov.br/agu/pt-br/composicao/advogado-geral-da-uniao-1/advogado-geral-da-uniao-0",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro da Controladoria-Geral da União",
+    "nome": "Vinicius Marques de Carvalho",
+    "partido": "Sem partido",
+    "desde": "2023-01-01",
+    "orgao": "CGU",
+    "foto": "",
+    "foto_local": "assets/img/executivo/vinicius-marques-de-carvalho.jpg",
+    "foto_source": "https://commons.wikimedia.org/wiki/File%3A01.01.2023_-_Posse_de_Vinicius_Marques_de_Carvalho%2C_Ministro_de_Estado_da_CGU_%2852625918697%29.jpg",
+    "email": "cgugabin@cgu.gov.br",
+    "email_alt": [
+      "gm.agenda@cgu.gov.br"
+    ],
+    "email_source": "https://www.gov.br/cgu/pt-br/acesso-a-informacao/institucional/quem-e-quem/gabinete-ministerial",
+    "email_tipo": "gabinete"
+  },
+  {
+    "cargo": "Ministro do Gabinete de Segurança Institucional",
+    "nome": "Marcos Antonio Amaro dos Santos",
+    "partido": "Sem partido",
+    "desde": "2023-05-04",
+    "orgao": "GSI",
+    "foto": "",
+    "foto_local": "assets/img/executivo/marcos-antonio-amaro-dos-santos.jpg",
+    "foto_source": "https://pt.wikipedia.org/wiki/Marcos_Antonio_Amaro_dos_Santos",
+    "email": "agenda.gsi@presidencia.gov.br",
+    "email_alt": [],
+    "email_source": "https://www.gov.br/gsi/pt-br/composicao/gabinete/ministro",
+    "email_tipo": "gabinete"
+  }
+]
